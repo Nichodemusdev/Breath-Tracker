@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.ruler-container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+.ruler {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.ruler div {
+    position: absolute;
+    bottom: 100%;
+    font-size: 12px;
+}
+
+.ruler .mark {
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: black;
+}
+
+.bar-container {
+    width: 80%;
+    height: 10px;
+    background: lightgray;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background: hsl(0, 100%, 50%);
+    transition: width 0.1s linear;
+}
+
+.controls {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0.5px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+}
